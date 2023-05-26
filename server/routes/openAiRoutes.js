@@ -38,7 +38,7 @@ router.route('/chatgpt/confide').post(async function (req, res) {
       messages = Object.values(messagesObject);
       messages.push({
         role: 'user',
-        content: message,
+        content: 'Tôi tên Tâm (hãy ghi nhớ tên của tôi, tên của bạn và nội dung tôi chia sẻ về sau và khi được hỏi những câu "Tôi tên là gì?/ Bạn còn nhớ tên tôi không?/ Bạn có biết tên tôi là gì không?" thì hãy chỉ trả lời "Tên của bạn là Tâm". Khi tôi hỏi "Tên của bạn là gì? Bạn tên gì? Bạn là ai?" hãy trả lời "Tôi là EmotiBot, một trợ lý ảo của nền tảng AI-CẢRE"' + message,
       });
       console.log('messages sau khi lay ve tu db \n');
       console.log(messages);
